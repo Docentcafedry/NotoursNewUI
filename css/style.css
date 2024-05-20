@@ -6,7 +6,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
 *,
 *::before,
 *::after {
@@ -24,67 +23,53 @@ html {
     transform: translateX(-100px);
     opacity: 0;
   }
-
   80% {
     transform: translateX(10px);
   }
-
   100% {
     transform: translate(0);
     opacity: 1;
   }
 }
-
 @keyframes moveFromRight {
   0% {
     transform: translateX(100px);
     opacity: 0;
   }
-
   80% {
     transform: translateX(-10px);
   }
-
   100% {
     transform: translate(0);
     opacity: 1;
   }
 }
-
 @keyframes moveFromBottom {
   0% {
     transform: translateY(100px);
     opacity: 0;
   }
-
   /* 80% {
     transform: translateY(-10px);
   } */
-
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
 body {
   padding: 30px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #dddbdb;
+  color: #e7e4e4;
   box-sizing: border-box;
 }
 
 .page-header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.799),
-      rgba(40, 180, 133, 0.799)
-    ),
-    url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.799), rgba(40, 180, 133, 0.799)), url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -109,7 +94,7 @@ body {
 }
 
 .main-header {
-  color: #ebe9e9;
+  color: #e7e4e4;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3rem;
@@ -183,3 +168,5 @@ body {
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
+
+/*# sourceMappingURL=style.css.map */
