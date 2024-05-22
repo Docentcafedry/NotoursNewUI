@@ -6,3 +6,29 @@ body {
   color: $light-gray;
   box-sizing: border-box;
 }
+
+.secondary-header {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.7;
+  background-image: linear-gradient(to right, $light-green, $dark-green);
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header-third {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4;
+  color: $main-grey;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: $main-grey;
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}

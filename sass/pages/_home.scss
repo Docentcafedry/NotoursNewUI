@@ -1,0 +1,64 @@
+.section-about {
+  margin-top: 5rem;
+}
+
+.section-about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  justify-self: center;
+  justify-content: center;
+}
+
+.section-about__content--text {
+  margin-left: 10rem;
+  justify-self: center;
+}
+
+.composition-box {
+  position: relative;
+}
+
+.compostion-box-img-1 {
+  width: 45%;
+  position: absolute;
+  //   position: absolute;
+  outline-offset: 1.5rem;
+  transform: translateY(10%);
+  background-color: red;
+  box-shadow: 1rem 1.5rem 2.4rem rgb(34, 34, 34);
+  transition: all 0.2s;
+  &:hover {
+    outline: 0.5rem solid $dark-green;
+    scale: 1.1;
+  }
+}
+
+.compostion-box-img-2 {
+  width: 45%;
+  position: absolute;
+  //   position: absolute;
+  outline-offset: 1.5rem;
+  position: absolute;
+  transform: translate(70%, 30%);
+  box-shadow: 1rem 1.5rem 2.4rem rgb(34, 34, 34);
+  transition: all 0.2s;
+  &:hover {
+    outline: 0.5rem solid $dark-green;
+    scale: 1.1;
+  }
+}
+
+.compostion-box-img-3 {
+  width: 45%;
+  position: absolute;
+  //   position: absolute;
+  outline-offset: 1.5rem;
+  transform: translate(30%, 60%);
+  box-shadow: 1rem 1.5rem 2.4rem rgb(34, 34, 34);
+  transition: all 0.2s;
+  &:hover {
+    outline: 0.5rem solid $dark-green;
+    scale: 1.1;
+  }
+}
