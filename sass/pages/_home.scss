@@ -62,3 +62,41 @@
     scale: 1.1;
   }
 }
+
+.features-section {
+  display: flex;
+  align-items: center;
+  padding: 0 8rem;
+  margin-top: 16rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($light-green, 0.799),
+      rgba($dark-green, 0.799)
+    ),
+    url("../img/hero.jpg");
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 8rem;
+  height: 70vh;
+}
+
+.fuatures-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.fuature-box {
+  box-shadow: 0.2rem 0.4rem 1rem rgb(134, 134, 134);
+  background-color: rgba(255, 252, 252, 0.816);
+  padding: 2.8rem 3.2rem;
+  border-radius: 0.3rem;
+}
+
+.icon-element {
+  font-size: 4rem;
+  background-image: linear-gradient(to right, $light-green, $dark-green);
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+}
