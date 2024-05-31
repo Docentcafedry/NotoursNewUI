@@ -49,3 +49,19 @@
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
 }
+
+.simple-button:link,
+.simple-button:visited {
+  color: $dark-green;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-bottom: 0.1rem solid $dark-green;
+  transition: all 0.1s;
+}
+
+.simple-button:hover,
+.simple-button:active {
+  color: #fff;
+  background-color: $dark-green;
+}

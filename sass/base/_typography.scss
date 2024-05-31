@@ -15,6 +15,7 @@ body {
   display: inline-block;
   color: transparent;
   -webkit-background-clip: text;
+  opacity: 1;
 }
 
 .header-third {
@@ -25,7 +26,7 @@ body {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: $main-grey;
 
   &:not(:last-child) {
