@@ -295,6 +295,98 @@ body {
   -webkit-background-clip: text;
 }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.book {
+  height: 50rem;
+  width: 70%;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.807) 0%, rgba(255, 255, 255, 0.799) 50%, transparent 50%), url(../../img/nat-10.jpg);
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(35, 35, 35, 0.101);
+  background-size: 100%;
+}
+
+.form_header {
+  margin-left: 8rem;
+}
+
+.navigation__input {
+  opacity: 0;
+  visibility: hidden;
+}
+.navigation__input:checked ~ .nav__background {
+  transform: scale(120);
+  background-position: center;
+  background-size: 100%;
+}
+.navigation__input:checked ~ .navigation {
+  width: 100%;
+  opacity: 1;
+  z-index: 100;
+  height: 100%;
+}
+
+.navigation__input_label {
+  color: #777;
+  padding: 1.5rem;
+  background-color: #e7e4e4;
+  border-radius: 50%;
+  position: fixed;
+  top: 7rem;
+  right: 5rem;
+  z-index: 101;
+}
+
+.nav__background {
+  height: 3rem;
+  width: 3rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  border-radius: 50%;
+  position: fixed;
+  top: 8.5rem;
+  right: 6.5rem;
+  z-index: 100;
+  transition: all 0.2s;
+}
+
+.navigation {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav_list {
+  list-style: none;
+}
+.nav_list_item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.nav_list_item_link:link, .nav_list_item_link:visited {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e7e4e4;
+  padding: 1.5rem 4rem;
+  background-image: linear-gradient(125deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 230%;
+  transition: all 0.4s;
+}
+.nav_list_item_link:active, .nav_list_item_link:hover {
+  color: #777;
+  background-position: 100%;
+}
+
+.nav_list {
+  width: 100%;
+}
+
 .center-text {
   text-align: center;
 }
@@ -317,6 +409,14 @@ body {
 
 .margin-top-big {
   margin-top: 10rem;
+}
+
+.margin-top-secondary {
+  margin-top: 6rem;
+}
+
+.margin-top-small {
+  margin-top: 3rem;
 }
 
 /*
@@ -516,6 +616,120 @@ Dark green: #28b485
   height: 100%;
   width: 100%;
   object-fit: fill;
+}
+
+.form__group {
+  font-size: 1.2rem;
+  margin-left: 8rem;
+  color: #777;
+}
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input {
+  padding: 1.5rem 1.5rem;
+  border: none;
+  width: 35%;
+  font-size: inherit;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+.form__input:focus:invalid {
+  border-bottom: 0.2rem solid red;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.099);
+  border-bottom: 0.2rem solid #28b485;
+}
+.form__input::placeholder {
+  color: #777;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+}
+.form__label {
+  display: block;
+  color: #777;
+  font-size: inherit;
+  padding: 0 1.5rem;
+  font-weight: 700;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.form__radio_group {
+  width: 20%;
+  display: inline-block;
+  position: relative;
+}
+.form__radio_group__button {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #28b485;
+  position: absolute;
+  left: 0;
+  top: -0.27rem;
+}
+
+.form__radio_span {
+  margin-left: 2rem;
+}
+
+.page-footer {
+  padding: 10rem 0rem;
+  background-color: #333;
+  font-size: 1.2rem;
+}
+
+.footer__logo {
+  height: 10rem;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.footer {
+  color: #fff;
+}
+.footer__text_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.footer__copyright {
+  padding: 2rem 0;
+  align-self: center;
+  justify-self: center;
+  border-top: 1px solid #777;
+}
+.footer__navigation {
+  align-self: center;
+  justify-self: center;
+}
+.footer__navigation_list {
+  border-top: 1px solid #777;
+  padding: 2rem 0;
+  display: flex;
+  list-style: none;
+}
+.footer__navigation_list_item:not(:first-child) {
+  margin-left: 3rem;
+}
+.footer__navigation_list_item_link:visited, .footer__navigation_list_item_link:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.footer__navigation_list_item_link:hover, .footer__navigation_list_item_link:active {
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=style.css.map */

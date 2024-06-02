@@ -100,3 +100,112 @@
   color: transparent;
   -webkit-background-clip: text;
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $light-green, $dark-green);
+}
+
+.book {
+  height: 50rem;
+  width: 70%;
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.807) 0%,
+      rgba(255, 255, 255, 0.799) 50%,
+      transparent 50%
+    ),
+    url(../../img/nat-10.jpg);
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(35, 35, 35, 0.101);
+  background-size: 100%;
+}
+
+.form_header {
+  margin-left: 8rem;
+}
+
+.navigation__input {
+  opacity: 0;
+  visibility: hidden;
+
+  &:checked ~ .nav__background {
+    transform: scale(120);
+    background-position: center;
+    background-size: 100%;
+  }
+  &:checked ~ .navigation {
+    width: 100%;
+    opacity: 1;
+    z-index: 100;
+    height: 100%;
+  }
+}
+
+.navigation__input_label {
+  color: $main-grey;
+  padding: 1.5rem;
+  background-color: $light-gray;
+  border-radius: 50%;
+  position: fixed;
+  top: 7rem;
+  right: 5rem;
+  z-index: 101;
+}
+
+.nav__background {
+  height: 3rem;
+  width: 3rem;
+  background-image: radial-gradient($light-green, $dark-green);
+  border-radius: 50%;
+  position: fixed;
+  top: 8.5rem;
+  right: 6.5rem;
+  z-index: 100;
+  transition: all 0.2s;
+}
+
+.navigation {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav_list {
+  list-style: none;
+
+  &_item {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    &_link:link,
+    &_link:visited {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $light-gray;
+      padding: 1.5rem 4rem;
+      background-image: linear-gradient(
+        125deg,
+        transparent 0%,
+        transparent 50%,
+        #fff 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+    }
+    &_link:active,
+    &_link:hover {
+      color: $main-grey;
+      background-position: 100%;
+    }
+  }
+}
+
+.nav_list {
+  width: 100%;
+}

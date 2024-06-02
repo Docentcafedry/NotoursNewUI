@@ -17,6 +17,21 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <section class="nav-section">
+      <input type="checkbox" id="nav_input" class="navigation__input">
+      <label for="nav_input" class="navigation__input_label">Menu</label>
+      <div class="nav__background">&nbsp;</div>
+      <nav class="navigation">
+        <ul class="nav_list">
+          <li class="nav_list_item"><a href="#" class="nav_list_item_link" >About natous</a></li>
+          <li class="nav_list_item"><a href="#" class="nav_list_item_link">your benefits</a></li>
+          <li class="nav_list_item"><a href="#" class="nav_list_item_link">Popular tours</a></li>
+          <li class="nav_list_item"><a href="#" class="nav_list_item_link">Stories</a></li>
+          <li class="nav_list_item"><a href="#" class="nav_list_item_link">Book now</a></li>
+        </ul>
+      </nav>
+    </section>
+
     <header class="page-header">
       <div class="page-header__logo-box">
         <img
@@ -161,6 +176,56 @@
         </div>
       </div>
       <a class="simple-button" href="#">See all reviews &rarr;</a>
+    </section>
+    <section class="section-book">
+      <div class="book center-content">
+        <div class="form_header">
+          <h1 class="secondary-header margin-top-secondary">
+            start booking now
+          </h1>
+        </div>
+        <div class="form__container margin-top-small">
+          <form action="#">
+            <div class="form__group">
+              <input class="form__input" type="text" id="Fullname" placeholder="Full name" required />
+              <label for="Fullname" class="form__label">Full name</label>
+            </div>
+            <div class="form__group">
+              <input class="form__input" type="email" id="email" placeholder="Email" required />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group">
+              <div class="form__radio_group">
+                <input type="radio" name="size" id="small" class="form__radio_input">
+                <label for="small" class="form__radio_span"><span class="form__radio_group__button"></span>Small group</label>
+              </div>
+              <div class="form__radio_group">
+                <input type="radio" name="size" id="large" class="form__radio_input">
+                <label for="large" class="form__radio_span"><span class="form__radio_group__button"></span>Large group</label>
+              </div>
+            </div>
+          </div>
+          </form>
+      </div>
+    </section>
+    <section class="page-footer">
+      <div class="logo-container">
+        <img class="footer__logo" src="img/logo-green-2x.png" alt="logo-green">
+      </div>
+      <div class="footer__text_content margin-top-secondary">
+        <div class="footer__navigation">
+          <ul class="footer__navigation_list">
+            <li class="footer__navigation_list_item"><a class="footer__navigation_list_item_link" href="#">Company</a></li>
+            <li class="footer__navigation_list_item"><a class="footer__navigation_list_item_link" href="#">Contact us</a></li>
+            <li class="footer__navigation_list_item"><a class="footer__navigation_list_item_link" href="#">Coreers</a></li>
+            <li class="footer__navigation_list_item"><a class="footer__navigation_list_item_link" href="#">Privacy policy</a></li>
+            <li class="footer__navigation_list_item"><a class="footer__navigation_list_item_link" href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>Built by Alexey Vlasenko with a help of Jonas Schmedtmann's CSS course. Copyright &copy; by Alexey Vlasenko</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
