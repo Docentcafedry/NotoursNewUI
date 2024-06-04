@@ -42,6 +42,15 @@
       background-color: #fff;
     }
   }
+
+  &-green {
+    background-color: $dark-green;
+    color: #fff;
+
+    &::after {
+      background-color: $dark-green;
+    }
+  }
 }
 
 .animated-button {

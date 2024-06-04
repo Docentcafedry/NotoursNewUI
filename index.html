@@ -17,6 +17,24 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="popup" id="popup">
+      <div class="popup__content center-content-position">
+        <div class="popup__content_image-upper">
+          <img src="img/nat-8.jpg" class="image-upper" alt="Woman on the boat">
+        </div>
+        <div class="popup__content_image-down">
+          <img src="img/nat-9.jpg" class="image-down" alt="Man on a pick of a mountain">
+        </div>
+        <div class="popup__content_text">
+          <h1 class="secondary-header center-text margin-small">Start booking now</h1>
+          <h3 class="header-third margin-small">Important - please read this terms before booking</h3>
+          <p class="popup__content_text_main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel nulla viverra, ultricies odio a, ultrices turpis. Donec tellus dui, porta vel sem nec, lobortis viverra est. Suspendisse eget ante quis neque lacinia aliquet at vitae nisl. Donec tristique, neque a feugiat vestibulum, urna sapien molestie ex, eu mattis nulla purus id massa. In eu pellentesque sem. Sed metus diam, egestas at diam id, laoreet bibendum velit. Ut ultricies mi lacus, et venenatis urna accumsan vitae. Donec pellentesque ac metus ut convallis.Curabitur et ultricies nunc. Praesent consequat placerat diam at condimentum. Pellentesque accumsan pharetra quam, a venenatis libero congue a. Aliquam egestas et risus vitae vestibulum. Nullam ultricies lorem ac ipsum viverra, a mattis lacus scelerisque. Quisque in sollicitudin neque. Pellentesque sit amet porta libero. 
+          <div class="popup__content_button">
+            <a class="btn btn-green margin-top-small" href="#tours-section">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="nav-section">
       <input type="checkbox" id="nav_input" class="navigation__input">
       <label for="nav_input" class="navigation__input_label">
@@ -103,7 +121,7 @@
         </div>
       </div>
     </section>
-    <section class="tours-section">
+    <section class="tours-section" id="tours-section">
       <div class="tour-cards">
         <div class="card">
           <div class="card card__side card__side-front">
@@ -135,7 +153,7 @@
                 </div>
               </div>
               <div class="tour-cta">
-                <a href="#" class="btn btn-white center-text">book now!</a>
+                <a href="#popup" class="btn btn-white center-text">book now!</a>
               </div>
             </div>
           </div>
